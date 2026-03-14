@@ -10,12 +10,12 @@ function App() {
   return (
     <CartContextProvider>
       <Header />
-      <Shop> 
+      <Shop>
         {DUMMY_PRODUCTS.map((product) => (
           <li key={product.id}>
-        <Product {...product}  />
-        </li>
-      ))} 
+            <Product {...product} />
+          </li>
+        ))}
       </Shop>
     </CartContextProvider>
   );
